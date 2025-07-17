@@ -36,4 +36,8 @@ jobs:
           echo " THE ADDRESS IS $ADDRESS",
           echo " THE PHONE NUMBER IS $PHONE"
           echo " THE PHONE NUMBER IS $AGE"
+          echo " THE REPO NAME IS ${{ github.repository }}"
+          echo " THE RUNNER OS TYPE IS ${{ runner.os }}"
+          echo " THE JOB IS ${{ job.status }}"
+          
           
