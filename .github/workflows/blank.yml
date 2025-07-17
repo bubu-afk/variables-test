@@ -21,7 +21,7 @@ jobs:
      ADDRESS: KARNATAKA   
     steps:
       
-      - uses: actions/checkout@v4
+- uses: actions/checkout@v4
 
       
       - name: Run a one-line script
