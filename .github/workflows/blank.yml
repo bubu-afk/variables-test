@@ -10,6 +10,7 @@ on:
   workflow_dispatch:
 env:
  NAME: SASI
+ AGE: FIFTY
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   
@@ -34,3 +35,5 @@ jobs:
           echo "THE NAME IS $NAME",
           echo " THE ADDRESS IS $ADDRESS",
           echo " THE PHONE NUMBER IS $PHONE"
+          echo " THE PHONE NUMBER IS $AGE"
+          
