@@ -1,0 +1,36 @@
+name: Variables-test
+
+on: 
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+env:
+ NAME: SASI
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  
+  build:
+    
+    runs-on: ubuntu-latest
+    env:
+     ADDRESS: KARNATAKA   
+    steps:
+      
+      - uses: actions/checkout@v4
+
+      
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      
+      - name: The details of a person
+        env:
+         PHONE: 9538765482
+        run: |
+          echo "THE NAME IS $NAME",
+          echo " THE ADDRESS IS $ADDRESS",
+          echo " THE PHONE NUMBER IS $PHONE"
