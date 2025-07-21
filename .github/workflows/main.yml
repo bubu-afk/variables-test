@@ -33,7 +33,7 @@ jobs:
             
             Commit: `${{ github.sha}}`
             Workflow Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          to: bhuvanraj107123@gmail.com # Replace with actual recipient
+          to: cherry107123@gmail.com # Replace with actual recipient
           from: bhuvanraj107123@gmail.com # Replace with your SES verified identity
 
       - name: Send Email Notification (on failure)
@@ -50,5 +50,5 @@ jobs:
             
             Commit: `${{ github.sha}}`
             *Please review logs:* ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          to: bhuvanraj107123@gmail.com
+          to: cherry107123@gmail.com
           from: bhuvanraj107123@gmail.com
